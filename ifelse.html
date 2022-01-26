@@ -1,0 +1,142 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+	<title>Statemen IF ELSE</title>
+</head>
+<body>
+<script>
+  var nilai = 60;
+  if ((nilai >= 80)  && (nilai <=100 )) 
+  {
+  	document.write("Indeks nilai anda A");
+  }
+  else if ((nilai >=70 ) && (nilai <= 79)) 
+  {
+  	document.write("Indeks nilai anda B");
+  }
+  else if ((nilai >=60 ) && (nilai <= 69)) 
+  {
+  	document.write("Indeks nilai anda C");
+  }
+  else if ((nilai >=50 ) && (Nilai <= 59)) 
+  {
+  	document.write("Indeks nilai anda D");
+  }
+  else if ((nilai >=0 ) && (nilai <= 49)) 
+  {
+  	document.write("Indeks nilai anda E");
+  }
+  else{
+  	document.write("Nilai diluar jangkawan");
+  } 
+</script>
+</body>
+</html> -->
+<!-- <html>
+<head>
+<title> Program Grade Nilai di Javascript</title>
+<script>alert("Selamat datang di program grade nilai sederhana kami. Salam http://itfasilkom.blogspot.com")</script>
+<script type="text/javascript">
+ function x()
+ {
+ var nt,np,hasil; //nt=nilai teori, np=nilai praktek
+ nt=document.forms[0].nt.value;
+ np=document.forms[0].np.value;
+ hasil=(nt*1+np*1)/2 //hasil=rumus rata2. Kenapa nt,np harus di kali 1 karena jika tidak javascript akan menganggap bahwa inputan nt,np adalah jadi 1 ( string)
+ document.forms[0].nr.value=hasil;
+ if(hasil<50)
+ ket="E";
+ else if (hasil<60)
+ ket="D";
+ else if (hasil<70)
+ ket="C";
+ else if (hasil<85)
+ ket="B";
+ else if (hasil<=100 && hasil>=85)
+ ket="A";
+ else
+ ket="Input Salah >> 0-100";
+ document.forms[0].nh.value=ket;
+ }
+ 
+</script>
+</head>
+<body>
+<table>
+ <form>
+ <h1>Program Grade Nilai Sederhana dengan Javascript</h1>
+ <tr>
+ <label><td>Nilai Teori</td></label>
+ <td><input type="text" name=nt /></td>
+ </tr>
+ 
+ <tr>
+ <label><td>Nilai Praktek</td></label>
+ <td><input type="text" name=np /></td>
+ </tr>
+ 
+ <tr>
+ <label><td>Rata-rata</td></label>
+ <td><input type="text" name=nr /></td>
+ </tr>
+ 
+ <tr>
+ <label><td>Nilai Huruf</td></label>
+ <td><input type="text" name=nh /></td>
+ </tr>
+ <tr>
+ <td><input type="button" value="Hitung Rata-rata" onClick="x()" /></td>
+ <td><input type="reset" value="Reset" /></td>
+ </tr>
+ </form>
+</table>
+<br />
+<blink><a href="mailto:pungki.it@gmail.com">email: pungki.it@gmail.com</a></blink>
+</body>
+</html> -->
+<!-- <!doctype html>
+<html>
+    <head>
+        <title>Belajar Javascript</title>
+        <script>
+            function hello()
+            {
+                var nilaiangka=100;
+                var nilaihuruf;
+                if(nilaiangka<70)
+                {
+                    alert("nilai anda B");
+                }
+                else if(nilaiangka>=70&&nilaiangka<100)
+                {
+                    alert("nilai anda A");
+                }
+                else
+                {
+                    alert("anda luar biasa");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <button onClick="hello()">Click me</button>
+    </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script>
+        var nilai = prompt("Inputkan nilai akhir:");
+        var grade = "";
+
+        if(nilai >= 90) grade = "A"
+        else if(nilai >= 80) grade = "B+"
+        else if(nilai >= 70) grade = "B"
+        else grade = "F";
+
+        document.write(`<p>Grade anda: ${grade}</p>`);
+    </script>
+</body>
+</html>
